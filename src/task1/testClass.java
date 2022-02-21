@@ -1,11 +1,12 @@
 package task1;
+
 import java.util.Scanner;
 public class testClass{//класс для отработки
     public testClass(){
-       Integer[] arr = new Integer[10];//создаём массив рандомных чисел
-       for(int i=0;i<arr.length;i++){
-           arr[i]=(int)(Math.random()*10);
-       }
+        Integer[] arr = new Integer[10];//создаём массив рандомных чисел
+        for(int i=0;i<arr.length;i++){
+            arr[i]=(int)(Math.random()*10);
+        }
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+"     ");//технический вывод информации для себя
         }
@@ -24,20 +25,20 @@ public class testClass{//класс для отработки
                     }
                 }
             }
-                if(flagArr[0]){//если есть ноль
-                    for(int i=1;i<flagArr.length;i++){
-                        if(flagArr[i]){
-                            str+=i;
-                            flagArr[i]=false;
-                            break;
-                        }
+            if(flagArr[0]){//если есть ноль
+                for(int i=1;i<flagArr.length;i++){
+                    if(flagArr[i]){
+                        str+=i;
+                        flagArr[i]=false;
+                        break;
                     }
                 }
-                for(int i=0;i<flagArr.length;i++){//если нет нуля+ остальные случаи
-                    if(flagArr[i]) {
-                        str += i;
-                    }
+            }
+            for(int i=0;i<flagArr.length;i++){//если нет нуля+ остальные случаи
+                if(flagArr[i]) {
+                    str += i;
                 }
+            }
 
 
             return str;
