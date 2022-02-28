@@ -5,8 +5,7 @@ import task6.Builder.ConcreteBuilder;
 import task6.Builder.Director;
 import task6.Copyable.Client;
 import task6.Copyable.ConcretePrototype1;
-import task6.Builder.builder;
-import task6.FactoryMethod.smallFactory;
+import task6.FactoryMethod.*;
 
 public class Main {
     public static void main(String[] args){
@@ -19,7 +18,6 @@ public class Main {
         ConcretePrototype1 copy2 = (ConcretePrototype1) orig.copy();
         orig.getString();
         copy2.getString();
-
         Director director = new Director();
         ConcreteBuilder concProt = new ConcreteBuilder();
         director.setDirBuilder(concProt);
@@ -31,5 +29,8 @@ public class Main {
 //        ConcreteFactory x = null;
 //        smallFactory a2 = new smallFactory(x);
 //        a2.makeProduct(x);
+        SimpleCoffeeFactory a12 = new SimpleCoffeeFactory();
+        CoffeeShop a13 = new CoffeeShop(a12);
     }
 }
+
