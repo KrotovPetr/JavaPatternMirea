@@ -51,9 +51,10 @@ public class Main {
 
         hand2.getInfo("Step1 completed.", Handler.info);
 
+        Receiver rec = new Receiver();
+        rec.addCommand(new mouseClick());
+        rec.addCommand(new mousePress());
+        rec.runCommand();
     }
-    Receiver rec = new Receiver();
-    rec.addCommand(new mouseClick());
-    rec.addCommand(new mousePress());
-    rec.runCommand();
+
 }
