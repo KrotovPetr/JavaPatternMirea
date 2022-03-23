@@ -1,0 +1,7 @@
+program:
+  user:
+    name: User
+  student:
+    name: Peter
+    last_name: Krotov
+    group: IKBO-01-20
