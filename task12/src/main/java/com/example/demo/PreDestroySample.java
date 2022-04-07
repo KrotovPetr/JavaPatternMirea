@@ -11,7 +11,7 @@ public class PreDestroySample {
     @PreDestroy
     public void init() {
         File file1 = new File("C:\\Users\\Peter\\Downloads\\myData\\hello.txt");
-        file1.delete();
+       // file1.delete();
         if (file1.exists()){
             System.out.println("Файл существует!");
         }
