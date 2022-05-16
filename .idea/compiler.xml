@@ -10,12 +10,8 @@
         <module name="demo (2)" />
         <module name="demo (1)" />
         <module name="demo (4)" />
-        <module name="task14" />
         <module name="demo (3)" />
         <module name="task15" />
-        <module name="task12" />
-        <module name="task13" />
-        <module name="task10" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
